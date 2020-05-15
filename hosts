@@ -1,0 +1,5 @@
+[servidorB]
+172.17.177.13 ansible_user=vagrant
+
+[servidorC]
+172.17.177.14 ansible_user=vagrant

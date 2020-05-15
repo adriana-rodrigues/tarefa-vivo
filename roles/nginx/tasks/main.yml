@@ -1,0 +1,13 @@
+---
+  - name: 'Instalando servidor nginx'
+    apt:
+      name:
+        - nginx
+      state: latest
+    become: yes
+
+  - name: 'Configurando a página index colocando meu nome'
+    copy:
+      src: 'files/index.html'
+      dest: '/usr/share/nginx/html/index.html'
+    become: yes
